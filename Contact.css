@@ -1,0 +1,255 @@
+
+.contactSection {
+    padding: 80px 7%;
+    background: #f5fafa;
+    font-family: Arial, sans-serif;
+}
+.contact{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+.contactHeading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.contactHeading span {
+    color: #078f94;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contactHeading h1 {
+    font-size: 40px;
+    color: #173d40;
+    margin: 15px 0;
+}
+
+.contactHeading h1 b {
+    color: #078f94;
+}
+
+.contactHeading p {
+    color: #777;
+    line-height: 1.8;
+}
+
+.contactContainer {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* Contact Information */
+
+.contactInfo {
+    width: 40%;
+    padding: 45px 35px;
+    box-sizing: border-box;
+    background: linear-gradient(145deg, #078f94, #04585e);
+    color: white;
+}
+
+.contactInfo h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.infoText {
+    color: #d8eeee;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.infoBox {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.infoIcon {
+    min-width: 48px;
+    height: 48px;
+    background: rgba(255,255,255,0.16);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.infoBox:hover .infoIcon {
+    background: #e8c94a;
+    color: #173d40;
+    transform: rotate(8deg) scale(1.1);
+}
+
+.infoBox h3 {
+    font-size: 16px;
+    margin: 0 0 7px;
+}
+
+.infoBox p {
+    color: #d7eeee;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Social Icons */
+
+.socialContact {
+    display: flex;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.socialContact a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    color: #078f94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socialContact a:hover {
+    background: #e8c94a;
+    color: #173d40;
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+
+.contactForm {
+    width: 60%;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+.contactForm h2 {
+    color: #173d40;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.contactForm > p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.inputRow {
+    display: flex;
+    gap: 20px;
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+.inputGroup label {
+    display: block;
+    color: #23484a;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 1px solid #dce7e7;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    background: #f8fbfb;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    border-color: #078f94;
+    box-shadow: 0 0 8px #078f9430;
+    background: white;
+}
+
+.inputGroup textarea {
+    resize: vertical;
+}
+
+.sendBtn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #078f94;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sendBtn i {
+    margin-left: 10px;
+}
+
+.sendBtn:hover {
+    background: #e8c94a;
+    color: #173d40;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #078f9440;
+}
+
+/* Responsive */
+
+@media(max-width: 900px) {
+    .contactContainer {
+        flex-direction: column;
+    }
+
+    .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+    .contactSection {
+        padding: 50px 5%;
+    }
+
+    .contactHeading h1 {
+        font-size: 29px;
+    }
+
+    .contactInfo,
+    .contactForm {
+        padding: 30px 22px;
+    }
+
+    .inputRow {
+        flex-direction: column;
+        gap: 0;
+    }
+}

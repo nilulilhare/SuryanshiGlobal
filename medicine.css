@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;600;700;800;900&display&family=Anton&display=swap');
+
+.medicineSection{
+    margin: 50px;
+    background-color: #ffffff;
+}
+
+.medicineLeftRight{
+    display: flex;
+    flex-direction: row;
+    gap:30px
+}
+
+/* medicine left */
+.UlList{
+    width:450px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+.UlList h1{
+    font-family: poppines;
+   line-height: 1.4;
+   letter-spacing: .5px;
+   background-color: #2563eb;
+   color: #ffffff;
+   text-align: center;
+   border-radius: 10px;
+}
+.UlList ul{
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-family: poppines;
+    line-height: 1.7;
+    font-size: 20px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.cardContainersMedicines{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: auto;
+    align-content: flex-start; /* Important */
+
+    gap: 20px 25px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+}
+.cardsMedicine{
+    width: 250px;
+    height: 270px;
+    background-color: lightgreen;
+    border-radius: 20px;
+}
+
+.cardsMedicine img{
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 20px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.cardsMedicine p{
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #636363;
+   text-align: center;
+}
+
+.cardsMedicine h3{
+    font-family: poppins;
+    line-height: 1.4;
+    /* letter-spacing: .5px; */
+    text-align: center;
+    color: #636363;
+}
+
+
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid #172c21;
+    background: white;
+
+    color: #172c21;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.pagination button:hover,
+.pagination button.active {
+    background: #172c21;
+    color: #00bda9;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button.dots {
+    border: none;
+    background: transparent;
+    cursor: default;
+}
