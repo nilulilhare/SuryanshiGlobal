@@ -1,30 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;600;700;800;900&display&family=Anton&display=swap');
 
+.MedicineCategoryHeader{
+    background-image: url(medicine/bannerMedicine.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+    animation: backgroundZoom 9s ease-in-out infinite alternate;
+    
+}
+ 
+ 
+@keyframes backgroundZoom {
+
+    from {
+        background-size: 100% 100%;
+    }
+
+    to {
+        background-size: 115% 115%;
+    }
+
+}
+
+.medicineBanner{
+    margin: 0px;
+    text-align: right;
+    width: 1200px;
+    height:465px;
+     padding-top: 150px;
+     padding-left: 100px;
+}
+.medicineBanner h1{
+  font-family: poppins;
+ 
+  font-size: 40px;
+ line-height: 1.4;
+ letter-spacing: 0.5px;
+ font-weight: bold;
+ padding: 5px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.medicineBanner span{
+    color: red;
+}
+/* Heading Animation */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+.medicineBanner p{
+    color: #082053;
+    font-family: roboto;
+    font-size: 20px;
+    letter-spacing: .3px;
+    line-height: 1.7;
+      animation: ParaMove 2.5s ease;
+}
+@keyframes ParaMove {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .medicineSection{
-    margin: 50px;
-    background-color: #ffffff;
+    margin: 30px;
+    /* background-color: #ffffff; */
+}
+
+ .buttonCategoryMedicine{
+    margin: 30px;
+    background-color: #036468;
+    border-radius: 20px;
+    padding: 8px;
+    width: 550px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+.medicineSection input{
+    width: 530px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #036468;;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.searchMedicineButton{
+    background-color: #036468;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 120px;
 }
 
 .medicineLeftRight{
     display: flex;
     flex-direction: row;
-    gap:30px
+    gap:25px
 }
 
 /* medicine left */
 .UlList{
-    width:450px;
-    background-color: #ffffff;
+    /* width:450px; */
+    background-color: rgb(227, 234, 236);
     padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 .UlList h1{
-    font-family: poppines;
-   line-height: 1.4;
+    font-family: poppins;
+  font-weight: bold;
    letter-spacing: .5px;
-   background-color: #2563eb;
-   color: #ffffff;
+ 
+   /* background-color: #036468; */
+    /* background: linear-gradient(
+    to right,#289ca0 50%,
+                 #036468
+   ); */
+   color: #1e293b;
    text-align: center;
-   border-radius: 10px;
+   margin: 0px;
+}
+.UlList h1:hover{
+     background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+     );
+   color: #ffffff;
+   border-radius: 5px;
+}
+.UlList span:hover{
+     background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+     );
+   color: #ffffff;
+}
+.UlList span{
+    color: #036468;
 }
 .UlList ul{
     padding: 10px;
@@ -35,6 +169,35 @@
     font-size: 20px;
     color: #2563eb;
     font-weight: bold;
+}
+.CategoryDiv{
+   margin: 10px;
+}
+.CategoryDiv div{
+   /* margin: 10px; */
+   /* background-color: #289ca0; */
+   /* background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+   ); */
+    /* color: #64748b; */
+     color: #1e293b;
+   border-radius: 10px;
+   padding: 5px;
+   padding-left: 30px;
+   width: 300px;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.CategoryDiv div:hover{
+     background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+     );
+   color: #ffffff;
+    
 }
 
 .cardContainersMedicines{
@@ -50,13 +213,42 @@
     padding: 20px;
 
     box-sizing: border-box;
-
+    background-color: rgb(227, 234, 236);
+    border-radius: 30px;
 }
 .cardsMedicine{
     width: 250px;
     height: 270px;
-    background-color: lightgreen;
+    background-color:  #ffffff;
+     /* background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+     to right, #ffffff 50%,
+                #289ca0
+   ); */
+    margin-left: 15px;
     border-radius: 20px;
+    overflow: hidden;
+      box-shadow: 0 4px 15px  black;
+       transition: all 0.4s ease;
+    transform: scale(1);
+   
+}
+.cardsMedicine:hover{
+    border: 1px solid #eedf13;
+    /* background-color: lightblue; */
+    
+     
+   background: linear-gradient(
+    to right,  #036468 50%,
+                #289ca0
+   );
+   color: #ffffff;
+
+}
+/* Click karne par chhota */
+.cardsMedicine:active {
+    transform: scale(0.55);
 }
 
 .cardsMedicine img{
@@ -67,13 +259,20 @@
     padding: 20px;
     align-items: center;
     border-radius: 30px;
+    border: none;
+    transition: all 0.6s ease-in-out;
+      animation: backgroundZoom 3s ease-in-out infinite alternate;
+    
+}
+.cardsMedicine:hover img{
+transform: scale(1.3);
 }
 
 .cardsMedicine p{
     font-family: roboto;
     font-size: 14px;
     line-height: 1.7;
-    color: #636363;
+    color: #1e293b;
    text-align: center;
 }
 
@@ -82,7 +281,19 @@
     line-height: 1.4;
     /* letter-spacing: .5px; */
     text-align: center;
-    color: #636363;
+    color: #036468;
+}
+.cardsMedicine:hover h3{
+    color: #ffffff;
+}
+.cardsMedicine i{
+   color: #eedf13;
+   font-size: 12px;
+  
+}
+.cardsMedicine span{
+    padding-left: 15px;
+ 
 }
 
 
@@ -120,8 +331,8 @@
 
 .pagination button:hover,
 .pagination button.active {
-    background: #172c21;
-    color: #00bda9;
+    background: #036468;
+    color: #ffffff;
 }
 
 .pagination button:disabled {
@@ -133,4 +344,36 @@
     border: none;
     background: transparent;
     cursor: default;
+}
+
+/* Footer */
+.medicineFooterBox {
+    width:100%;
+    background-color: #036468;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    display: flex;
+}
+.medicineFooterBox h2{
+    line-height: 1.4;
+    letter-spacing: .3px;
+}
+.medicineFooterBox span{
+    color:red;
+}
+
+.medicineFooterIcon{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.medicineFooterIcon div{
+    margin-left:100px;
+    font-family: poppins;
+    font-size: 18px;
+}
+.medicineFooterIcon i{
+    color: #eedf13;
 }

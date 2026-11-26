@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;600;700;800;900&display&family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    background-color: #f8fafc;
+}
+a{
+    text-decoration: none;
+    color: #1e293b;
+} 
+.antiObeysityBackgroundImage{
+    background-image: url(medicine/ObeysityImageBanner.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+    animation: backgroundZoom 9s ease-in-out infinite alternate;
+    
+}
+ 
+ 
+@keyframes backgroundZoom {
+
+    from {
+        background-size: 100% 100%;
+    }
+
+    to {
+        background-size: 115% 115%;
+    }
+
+}
+.antiObeysityBackgroundImage h1{
+    width: 1200px;
+    height: 300px;
+    font-family: poppins;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(40, 9, 153);
+    animation: continuousMove 1.5s ease-in-out infinite alternate;
+}
+@keyframes continuousMove {
+    0% {
+        transform: translateY(0);
+        color: rgb(255, 0, 0);
+    }
+    100% {
+        transform: translateY(-10px);
+        color: blue;
+    }
+}
+
+.AntiObeySity{
+    display: flex;
+    gap:30px;
+}
+.Anti-obesityRight{
+        box-sizing: border-box;
+       width: 500px;
+}
+.Anti-obesityRight h1{
+    font-family: poppins;
+    font-weight: bold;
+    /* line-height: 1.2; */
+    letter-spacing: .5px;
+    margin-top: 20px ;
+  
+    
+}
+.Anti-obesityRight h1:hover{
+     background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+     );
+    color: #ffffff;
+
+}
+
+.CategoryDiv{
+   margin: 10px;
+}
+.CategoryDiv div{
+     color: #1e293b;
+   border-radius: 10px;
+  padding: 5px;
+   
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+.CategoryDiv div:hover{
+     background: linear-gradient(
+    to right, #036468 50%,
+                #289ca0
+     );
+   color: #ffffff;
+    
+}

@@ -1,3 +1,6 @@
+
+// pagination
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.getElementById("medicineContainer");
@@ -128,5 +131,105 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     displayMedicines();
+
+});
+
+
+// search Medicine by name(h3 me likha hai uske anusar search hoga)
+document.addEventListener("DOMContentLoaded", function () {
+
+    let searchInput = document.getElementById("medicineSearchInput");
+    let searchButton = document.getElementById("searchBtn");
+
+    function searchMedicine() {
+
+        let searchValue = searchInput.value.toLowerCase().trim();
+
+        let medicineCards = document.querySelectorAll(".cardsMedicine");
+
+        let found = false;
+
+        medicineCards.forEach(function (card) {
+
+            let medicineName = card.querySelector("h3")
+                                    .innerText.toLowerCase();
+
+            if (medicineName.includes(searchValue) && searchValue !== "") {
+
+                card.style.display = "block";
+                found = true;
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+        document.getElementById("noMedicineFound").style.display =
+            found ? "none" : "block";
+    }
+
+    // Search Button Click
+    searchButton.addEventListener("click", searchMedicine);
+
+    // Enter Key Search
+    searchInput.addEventListener("keypress", function (event) {
+
+        if (event.key === "Enter") {
+            searchMedicine();
+        }
+
+    });
+
+});
+
+
+// Search by category name
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    let searchInput = document.getElementById("medicineSearchInput");
+    let searchBtn = document.getElementById("searchBtn");
+
+    let cards = document.querySelectorAll(".cardsMedicine");
+
+    function searchMedicine() {
+
+        let searchValue = searchInput.value.toLowerCase().trim();
+
+        cards.forEach(function (card) {
+
+            let category = card.querySelector("p").innerText
+                .toLowerCase().trim();
+
+            let medicineName = card.querySelector("h3").innerText
+                .toLowerCase().trim();
+
+            if (
+                searchValue === "" ||
+                category.includes(searchValue) ||
+                medicineName.includes(searchValue)
+            ) {
+                card.style.display = "";
+            } 
+            else {
+                card.style.display = "none";
+            }
+
+        });
+
+    }
+
+    // Search button click
+    searchBtn.addEventListener("click", searchMedicine);
+
+    // Enter key search
+    searchInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            searchMedicine();
+        }
+    });
 
 });

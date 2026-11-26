@@ -452,45 +452,62 @@
             <button><i class="fas fa-search"></i>&nbsp;Search Medicines</button>
         </div>
     </div>
+     <section class="MedicineCategoryHeader">
+    <div class="medicineBanner">
+        <h1>Medicines <span>Categories</span></h1>
+        <p>Browse our wide range of genuine medicines<br>at the best price</p>
+       
+    </div>
+    </section>
 
     <!-- medicines  Section-->
     <section class="medicineSection">
+        <center>
+        <button class="buttonCategoryMedicine"> Find the right medicine for better health</button><br>
+        <input type="text"   id="medicineSearchInput"
+        placeholder="Search medicines..." >&nbsp;
+        <button class="searchMedicineButton" id="searchBtn"><i class="bi bi-search"></i>&nbsp;Search</button>
+        </center>
+       
         <div class="medicineLeftRight">
+
+       
+
             <!-- left side -->
             
             <div class="UlList">
-                <h1>Filter By Category</h1>
-                     <ul >
-                    <li>Anti Obesity 11 product</li>
-                    <li>Anti-Anxiety 29 products</li>
-                    <li> Anti-Asthamatic 88 products</li>
-                    <li>Anti-biotic 25 products</li>
-                    <li>Anti-Cancer 23 products</li>
-                    <li>Anti-Diabetic 13 products</li>
-                    <li>Anti-HIV 88 products</li>
-                    <li>Anti-Infection 35 products</li>
-                    <li>Blood Pressure 20 products</li>
-                    <li>Blood Sugar 55 products</li>
-                    <li>Brain-Disorder 15 products</li>
-                    <li>Cholesterol Lowering 55 products</li>
-                   <li> Erectile Dysfunction 14 products</li>
-                    <li>Eye Care 10 products</li>
-                    <li>Female Healthcare 16 products</li>
-                    <li>Gastroenterology 88 products</li>
-                    <li>Hair Loss 44 products</li>
-                    <li>Hepatitis 66 products</li>
-                    <li>Kidney Disease 88 products</li>
-                    <li>Liver Disease 77 products</li>
-                    <li>Lung Disease 55 products</li>
-                    <li>Men Healthcare 10 products</li>
-                    <li>Migrain-Treat 55 products</li>
-                    <li>Pain-Killer 24 products</li>
-                    <li>Parent-Products 88 products</li>
-                    <li> Pharmaceuticals 19 products</li>
-                    <li>Pharmaceuticals Injections 17 products</li>
-                    <li>Skin Care 21</li>
+                <h1>Filter By <span>Category</span></h1>
+                     <div class="CategoryDiv" >
+                    <div data-category="Anti-Obesity">Anti Obesity 11 product</div>
+                    <div  data-category="Anti-Anxiety">Anti-Anxiety 29 products</div>
+                    <div data-category="Anti-Asthamatic"> Anti-Asthamatic 88 products</div>
+                    <div data-category="Anti-biotic">Anti-biotic 25 products</div>
+                    <div data-category="Anti-Cancer">Anti-Cancer 23 products</div>
+                    <div data-category="Anti-Diabetic">Anti-Diabetic 13 products</div>
+                    <div data-category="Anti-HIV">Anti-HIV 88 products</div>
+                    <div data-category="Anti-Infection ">Anti-Infection 35 products</div>
+                    <div data-category="Blood Pressure">Blood Pressure 20 products</div>
+                    <div data-category="Blood Sugar">Blood Sugar 55 products</div>
+                    <div data-category="Brain-Disorder">Brain-Disorder 15 products</div>
+                    <div data-category="Cholesterol Lowering">Cholesterol Lowering 55 products</div>
+                   <div data-category="Erectile Dysfunction"> Erectile Dysfunction 14 products</div>
+                    <div data-category="Eye Care 10 products">Eye Care 10 products</div>
+                    <div data-category="Female Healthcare">Female Healthcare 16 products</div>
+                    <div data-category="Gastroenterology">Gastroenterology 88 products</div>
+                    <div data-category="Hair Loss">Hair Loss 44 products</div>
+                    <div data-category="Hepatitis">Hepatitis 66 products</div>
+                    <div data-category="Kidney Disease">Kidney Disease 88 products</div>
+                    <div data-category="Liver Disease">Liver Disease 77 products</div>
+                    <div data-category="Lung Disease">Lung Disease 55 products</div>
+                    <div data-category="Men Healthcare ">Men Healthcare 10 products</div>
+                    <div data-category="Migrain-Treat">Migrain-Treat 55 products</div>
+                    <div data-category="Pain-Killer">Pain-Killer 24 products</div>
+                    <div data-category="Parent-Products">Parent-Products 88 products</div>
+                    <div data-category="Pharmaceuticals"> Pharmaceuticals 19 products</div>
+                    <div data-category="Pharmaceuticals Injections">Pharmaceuticals Injections 17 products</div>
+                    <div data-category="Skin Care">Skin Care 21</div>
                     
-                    </ul>
+                     </div>
                  </div>
            
             <!-- right side -->
@@ -498,21 +515,30 @@
              <div class="cardContainersMedicines" id="medicineContainer">
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
+                        <div>
+                            <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-HIV</p>
                         <h3>Abacavir Sulphate Tablets</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti Cancer</p>
+                        <div >
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Abiraterone Acetate Tablets USP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti diabetic</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-diabetic</p>
                         <h3>Acarbose Tablets IP</h3>
                         </div>
                     </div>
@@ -520,58 +546,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Eye care</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Eye Care</p>
                         <h3>Acetazolamide Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Acetylcysteine Injection.jpg">  </div>
-                        <div><p>Liver Disease</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Liver Disease</p>
                         <h3>Acetylcysteine Injection BP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Acyclovir Tablets IP.jpg">  </div>
-                        <div><p>Anti Infection</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Acyclovir Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Adalimumab Injection IP.jpg">  </div>
-                        <div><p>Pharmaceuticals Injections</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pharmaceuticals Injections</p>
                         <h3>Adalimumab Injection IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Adapalene Gel IP.jpg">  </div>
-                        <div><p>Skin care</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Skin Care</p>
                         <h3>Adapalene Gel IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Adenosine Monophosphate Injection.jpg">  </div>
-                        <div><p>Pharmaceuticals Injections</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pharmaceuticals Injections</p>
                         <h3>Adenosine Monophosphate</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Agomelatine Tablets IP.jpg">  </div>
-                        <div><p>Anti Anixty</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anixty</p>
                         <h3>Agomelatine Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Albendazole Tablets IP.jpg">  </div>
-                        <div><p>Anti Infection</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Albendazole Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Allopurinol Tablets IP.jpg">  </div>
-                        <div><p>Pain Killer</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Allopurinol Tablets IP</h3>
                         </div>
                     </div>
@@ -579,13 +632,19 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Alpha Ketoanalogue Tablets.jpg">  </div>
-                        <div><p>Kideny Disease</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Kideny Disease</p>
                         <h3>Alpha Ketoanalogue Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Alprostadil Injection IP.jpg">  </div>
-                        <div><p>Erectile Dysfunction</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Erectile Dysfunction</p>
                         <h3>Alprostadil Injection IP</h3>
                         </div>
                     </div>
@@ -598,40 +657,58 @@
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Amitriptyline Tablets IP.jpg">  </div>
-                        <div><p>Anti-Anixity</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anixity</p>
                         <h3>Amitriptyline Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Amlodipine Besilate Tablets.jpg">  </div>
-                        <div><p>Blood Pressure</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Amlodipine Besilate Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Amoxycillin And Potassium Clavulanate Tablets.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Amoxycillin And Potassium Clavulanate Tablets</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Amoxycillin And Potassium Clavulanate Tablets.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Amoxycillin Capsules IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Amphotericin B Emulsion Injection.jpg">  </div>
-                        <div><p>Anti- infection</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Amphotericin B Emulsion Injection</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Ampicillin Capsules IP.jpg">  </div>
-                        <div><p>Anti-infection</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Ampicillin Capsules IP</h3>
                         </div>
                     </div>
@@ -639,58 +716,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Anastrozole Tablets IP.jpg">  </div>
-                        <div><p>Anti-cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Anastrozole Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Anidulafungin For Injection.jpg">  </div>
-                        <div><p>Anti-infection</p>
+                        <div>
+                            <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span> 
+                            <p>Anti-Infection</p>
                         <h3>Anidulafungin For Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Apalutamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Apalutamide Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Apremilast Tablets IP.jpg">  </div>
-                        <div><p>Pain-killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-killer</p>
                         <h3>Apremilast Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Aquasoft CV Lotion.jpg">  </div>
-                        <div><p>Skin-care</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Skin Care</p>
                         <h3>Aquasoft CV Lotion</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Armodanafil Tablets IP.jpg">  </div>
-                        <div><p>Anti-Anixiety</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anixiety</p>
                         <h3>Armodanafil Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Artemether And Lumefantrine Tablets.jpg">  </div>
-                        <div><p>Anti-infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Artemether And Lumefantrine Tablets</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Artesunate Injection Ip.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Artesunate Injection Ip</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Artesunate Tablets IP.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Artesunate Tablets IP</h3>
                         </div>
                     </div>
@@ -698,58 +802,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Atazanavir & Ritonavir Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-HIV</p>
                         <h3>Atazanavir & Ritonavir Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Atomoxetine Tablets IP.jpg">  </div>
-                        <div><p>Anti-Anixity</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anixity</p>
                         <h3>Atomoxetine Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Atorvastatin Tablets IP.jpg">  </div>
-                        <div><p>Cholesterol Lowering</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Cholesterol Lowering</p>
                         <h3>Atorvastatin Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Atracurium Besilate Injection.jpg">  </div>
-                        <div><p>Pharmaceuticals Injections</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pharmaceuticals Injections</p>
                         <h3>Atracurium Besilate Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Avanafil Tablets IP.jpg">  </div>
-                        <div><p>Erectile Dysfunction</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Erectile Dysfunction</p>
                         <h3>Avanafil Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Azathioprine Tablets IP.jpg">  </div>
-                        <div><p>Kidney Disease</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Kidney Disease</p>
                         <h3>Azathioprine Tablets IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Azilsartan Medoxomil Tablets.jpg">  </div>
-                        <div><p>Blood-Pressure</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Azilsartan Medoxomil Tablets</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Azithromycin For Injection.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Azithromycin For Injection</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Azithromycin Tablets IP.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Azithromycin Tablets IP</h3>
                         </div>
                     </div>
@@ -757,58 +888,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Baclofen Extended Release CapsulesTablets.jpg">  </div>
-                        <div><p>Pain-Killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Baclofen Extended Release CapsulesTablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Baricitinib Tablets IP.jpg">  </div>
-                        <div><p>Pain-Killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Baricitinib Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Beclomethasone Dipropionate Inhaler IP.jpg">  </div>
-                        <div><p>Anti-Asthametic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Asthametic</p>
                         <h3>Beclomethasone Dipropionate Inhaler IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Benzoyl Perioxide Gel IP.jpg">  </div>
-                        <div><p>Skin care</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Skin Care</p>
                         <h3>Benzoyl Perioxide Gel IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Bethanechol Chloride Tablets.jpg">  </div>
-                        <div><p>Female Healthcare</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Female Healthcare</p>
                         <h3>Bethanechol Chloride Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Bimatoprost Ophthalmic Solution.jpg">  </div>
-                        <div><p>Eye care</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Eye Care</p>
                         <h3>Bimatoprost Ophthalmic Solution</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Biphasic Isophane Insulin Injection IP.jpg">  </div>
-                        <div><p>Anti-Diabetic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>    
+                        <p>Anti-Diabetic</p>
                         <h3>Biphasic Isophane Insulin Injection IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Bosentan Tablets IP.jpg">  </div>
-                        <div><p>Blood Pressure</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Bosentan Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Budesonide And Formoterol Fumarate Inhaler.jpg">  </div>
-                        <div><p>Anti-Asthametic</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Asthametic</p>
                         <h3>Budesonide And Formoterol Fumarate Inhaler</h3>
                         </div>
                     </div>
@@ -816,13 +974,19 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Budesonide Inhaler IP.jpg">  </div>
-                        <div><p>Anti-Asthametic</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Asthametic</p>
                         <h3>Budesonide Inhaler IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Bupropion Hydrochloride Extended Release Tablets.jpg">  </div>
-                        <div><p>Anti-Anxiety</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anxiety</p>
                         <h3>Bupropion Hydrochloride Extended Release Tablets</h3>
                         </div>
                     </div>
@@ -835,39 +999,57 @@
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cabergoline Tablets IP.jpg">  </div>
-                        <div><p>Female-Healthcare</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Female Healthcare</p>
                         <h3>Cabergoline Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Calcitriol Capsules IP.jpg">  </div>
-                        <div><p>Kidney Disease</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Kidney Disease</p>
                         <h3>Calcitriol Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Capecitabine Tablets IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Capecitabine Tablets IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Carbamazepine Controlled Release Tablets IP.jpg">  </div>
-                        <div><p>Brain Disorder</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Brain Disorder</p>
                         <h3>Carbamazepine Controlled Release Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Carbidopa Levodopa and Entacapone Tablets.jpg">  </div>
-                        <div><p>Brain Disorder</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Brain Disorder</p>
                         <h3>Carbidopa Levodopa and Entacapone Tablets</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Carboxymethyl Cellulose Sodium Eye Drops.jpg">  </div>
-                        <div><p>Eye Care</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Eye Care</p>
                         <h3>Carboxymethyl Cellulose Sodium Eye Drops</h3>
                         </div>
                     </div>
@@ -875,58 +1057,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Carisoprodol Tablets IP.jpg">  </div>
-                        <div><p>Pain Killer</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Carisoprodol Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Carmustine for Injection USP.jpg">  </div>
-                        <div><p>Brain-Disorder</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Brain Disorder</p>
                         <h3>Carmustine for Injection USP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Carvedilol Tablets IP.jpg">  </div>
-                        <div><p>Blood Pressure</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Carvedilol Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Caspofungin Acetate For Injection.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Caspofungin Acetate For Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Cefdinir Capsules IP.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Cefdinir Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Cefixime Tablets IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Cefixime Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Cefpodoxime Tablets IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Cefpodoxime Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Ceftriaxone Injection IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Ceftriaxone Injection IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cefuroxime Axetil Tablets IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Cefuroxime Axetil Tablets IP</h3>
                         </div>
                     </div>
@@ -934,58 +1143,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cephalexin Capsules IP.jpg">  </div>
-                        <div><p>Anti-infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Cephalexin Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Ceritinib Capsules IP.jpg">  </div>
-                        <div><p>Lung-Disease</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Lung Disease</p>
                         <h3>Ceritinib Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Chlorambucil Tablets IP.jpg">  </div>
-                        <div><p>Anti-cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Chlorambucil Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Chlorthalidone Tablets IP.jpg">  </div>
-                        <div><p>Blood-Pressure</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Chlorthalidone Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Cholecalciferol Softgel.jpg">  </div>
-                        <div><p>pharmaceuticals</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>pharmaceuticals</p>
                         <h3>Cholecalciferol Softgel Capsules</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Chorionic Gonadotropin Injection IU.jpg">  </div>
-                        <div><p>Female Healthcare</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Female Healthcare</p>
                         <h3>Chorionic Gonadotropin Injection IU</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cilnidipine Tablets IP.jpg">  </div>
-                        <div><p>blood-pressure</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Cilnidipine Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Cinacalcet Tablets IP.jpg">  </div>
-                        <div><p>Kidney Disease</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Kidney Disease</p>
                         <h3>Cinacalcet Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Ciprofloxacin Eye Drops.jpg">  </div>
-                        <div><p>Eye care</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Eye Care</p>
                         <h3>Ciprofloxacin Eye Drops</h3>
                         </div>
                     </div>
@@ -993,58 +1229,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Ciprofloxacin Tablets IP.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Ciprofloxacin Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Citicoline Tablets IP.jpg">  </div>
-                        <div><p>Brain-Disorder</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Brain Disorder</p>
                         <h3>Citicoline Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Clarithromycin Tablets IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Clarithromycin Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cleansing Lotion IP.jpg">  </div>
-                        <div><p>Skin Care</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Skin Care</p>
                         <h3>Cleansing Lotion IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Clindamycin Capsule IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Clindamycin Capsule IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Clomifene Citrate Tablets IP.jpg">  </div>
-                        <div><p>Female-Healthcare</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Female Healthcare</p>
                         <h3>Clomifene Citrate Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Clonidine Tablets IP.jpg">  </div>
-                        <div><p>Blood-Pressure</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Clonidine Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Clotrimazole Absorbent Dusting Powder.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Clotrimazole Absorbent Dusting Powder</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cof-DX Syrup.jpg">  </div>
-                        <div><p>Parent-Products</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Parent Products</p>
                         <h3>Cof-DX Syrup</h3>
                         </div>
                     </div>
@@ -1052,58 +1315,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Cof-LS Syrup.jpg">  </div>
-                        <div><p>Parent-Products</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Parent Products</p>
                         <h3>Cof-LS Syrup</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Colchicine Tablet IP.jpg">  </div>
-                        <div><p>Pain-Killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Colchicine Tablet IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Cyclosporine Ophthalmic Emulsion Eye Drop.jpg">  </div>
-                        <div><p>Eye-Care</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Eye Care</p>
                         <h3>Cyclosporine Ophthalmic Emulsion Eye Drop</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Daclatasvir and Sofosbuvir Tablets.jpg">  </div>
-                        <div><p>Hepatitis</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Hepatitis</p>
                         <h3>Daclatasvir and Sofosbuvir Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Daclatasvir Dihydrochloride Tablets.jpg">  </div>
-                        <div><p>Hepatitis</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Hepatitis</p>
                         <h3>Daclatasvir Dihydrochloride Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Dapagliflozin Metformin HCI Extended Release Tablets.jpg">  </div>
-                        <div><p>Anti-Diabetic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Diabetic</p>
                         <h3>Dapagliflozin Metformin HCI Extended Release Tablets</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Dapagliflozin Tablets IP.jpg">  </div>
-                        <div><p>Anti-diabetic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Diabetic</p>
                         <h3>Dapagliflozin Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Dapoxetine Hydrochloride Tablets.jpg">  </div>
-                        <div><p>Erectile Dysfunction</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Erectile Dysfunction</p>
                         <h3>Dapoxetine Hydrochloride Tablets</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Darbepoetin Alfa Injection.jpg">  </div>
-                        <div><p>Kidney-Disease</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Kidney Disease</p>
                         <h3>Darbepoetin Alfa Injection</h3>
                         </div>
                     </div>
@@ -1111,58 +1401,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Dasatinib Tablets IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>    
+                        <p>Anti-Cancer</p>
                         <h3>Dasatinib Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Deflazacort Tablets IP.jpg">  </div>
-                        <div><p>Pharmaceutical</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pharmaceutical</p>
                         <h3>Deflazacort Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Desonide Cream IP.jpg">  </div>
-                        <div><p>Skin-care</p>
+                        <div>
+                             <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Skin Care</p>
                         <h3>Desonide Cream IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Dexamethasone Tablets.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Dexamethasone Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Docetaxel Lipid Suspension For Injection.jpg">  </div>
-                        <div><p>Pharmaceutical Injections</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pharmaceuticals Injections</p>
                         <h3>Docetaxel Lipid Suspension For Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Doxycycline Capsules IP.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Doxycycline Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Dulaglutide Solution For Injection.jpg">  </div>
-                        <div><p>Blood Sugar</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Sugar</p>
                         <h3>Dulaglutide Solution For Injection</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Duloxetine Gastro-Resistant Tablets IP.jpg">  </div>
-                        <div><p>Anti-Anxiety</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anxiety</p>
                         <h3>Duloxetine Gastro-Resistant Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Duloxetine Hydrochloride Tablets.jpg">  </div>
-                        <div><p>Anti-Anxiety</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anxiety</p>
                         <h3>Duloxetine Hydrochloride Tablets</h3>
                         </div>
                     </div>
@@ -1170,58 +1487,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Dutasteride Capsules Tablets.jpg">  </div>
-                        <div><p>Men Healthcare</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Men Healthcare</p>
                         <h3>Dutasteride Capsules Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Eberconazole Cream IP.jpg">  </div>
-                        <div><p>Skin Care</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Skin Care</p>
                         <h3>Eberconazole Cream IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Empagliflozin Tablets IP.jpg">  </div>
-                        <div><p>Anti-Diabetic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Diabetic</p>
                         <h3>Empagliflozin Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Emtricitabine and Tenofovir Disoproxil Fumarate Tablet.jpg">  </div>
-                        <div><p>Anti-HIV</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-HIV</p>
                         <h3>Emtricitabine and Tenofovir Disoproxil Fumarate Table</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Entecavir Tablets IP.jpg">  </div>
-                        <div><p>Hepatitis</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Hepatitis</p>
                         <h3>Entecavir Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Enzalutamide Capsules IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Enzalutamide Capsules IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Erlotinib Tablets IP.jpg">  </div>
-                        <div><p>Anty-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anty-Cancer</p>
                         <h3>Erlotinib Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Erythromicin Estolate Tablets USP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Erythromicin Estolate Tablets USP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Erythropoietin Injection IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-HIV</p>
                         <h3>Erythropoietin Injection IP</h3>
                         </div>
                     </div>
@@ -1229,58 +1573,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Escitalopram Tablets IP.jpg">  </div>
-                        <div><p>Anti-Anxiety</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anxiety</p>
                         <h3>Escitalopram Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Esomeprazole Tablets IP.jpg">  </div>
-                        <div><p>Gastroenterology</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Gastroenterology</p>
                         <h3>Esomeprazole Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Eszopiclone Tablets IP.jpg">  </div>
-                        <div><p>Anti-Anxiety</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anxiety</p>
                         <h3>Eszopiclone Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Etoposide Capsules IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Etoposide Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Etoricoxib Tablets IP.jpg">  </div>
-                        <div><p>Anti-Killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Etoricoxib Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Everolimus Tablets IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Everolimus Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Exemestane Tablets IP.jpg">  </div>
-                        <div><p>Female-Healthcare</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Female Healthcare</p>
                         <h3>Exemestane Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Ezetimibe Tablets IP.jpg">  </div>
-                        <div><p>Cholesterol Lowering</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Cholesterol Lowering</p>
                         <h3>Ezetimibe Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Famciclovir Tablets IP.jpg">  </div>
-                        <div><p>Anti-biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Famciclovir Tablets IP</h3>
                         </div>
                     </div>
@@ -1288,58 +1659,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Famciclovir Tablets IP.jpg">  </div>
-                        <div><p>Anti-Biotic</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Biotic</p>
                         <h3>Favipiravir Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Febuxostat Tablets IP.jpg">  </div>
-                        <div><p>Pain-Killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Febuxostat Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Fenofibrate Tablets IP.jpg">  </div>
-                        <div><p>Cholestrol Lowring</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Cholestrol Lowring</p>
                         <h3>Fenofibrate Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Ferric Carboxymaltose Injection.jpg">  </div>
-                        <div><p>Pharmaceutical Injections</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>    
+                        <p>Pharmaceuticals Injections</p>
                         <h3>Ferric Carboxymaltose Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Finasteride Tablets IP.jpg">  </div>
-                        <div><p>Hair-loss</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Hair Loss</p>
                         <h3>Finasteride Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Fluconazole Tablets IP.jpg">  </div>
-                        <div><p>Anti-Infection</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Infection</p>
                         <h3>Fluconazole Tablets IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Fluoxetine Capsules IP.jpg">  </div>
-                        <div><p>Anti-Anxiety</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Anxiety</p>
                         <h3>Fluoxetine Capsules IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Flutamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-Cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Flutamide Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Furosemide Tablets IP.jpg">  </div>
-                        <div><p>Blood-Pressure</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Pressure</p>
                         <h3>Furosemide Tablets IP</h3>
                         </div>
                     </div>
@@ -1347,58 +1745,85 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Gabapentin TabletsCapsules IP.jpg">  </div>
-                        <div><p>Pain-Killer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Pain-Killer</p>
                         <h3>Gabapentin TabletsCapsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Gal-UTI Syrup.jpg">  </div>
-                        <div><p>Parent-Products</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Parent Products</p>
                         <h3>Gal-UTI Syrup</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Galantamine Hydrobromide Tablets.jpg">  </div>
-                        <div><p>Brain-Disorder</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Brain Disorder</p>
                         <h3>Galantamine Hydrobromide Tablets</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Galvit Syrup.jpg">  </div>
-                        <div><p>Parent-Products</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Parent Products</p>
                         <h3>Galvit Syrup</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Galvit Tablet.jpg">  </div>
-                        <div><p>Parent-Products</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Parent Products</p>
                         <h3>Galvit Tablet</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/GCAL-Active Tablets.jpg">  </div>
-                        <div><p> Parent-Products</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p> Parent Products</p>
                         <h3>GCAL-Active Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Gefitinib Tablets IP.jpg">  </div>
-                        <div><p>Anti-cancer</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Anti-Cancer</p>
                         <h3>Gefitinib Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
                         <div> <img src="medicine/Glimepiride & Metformin Hydrochloride (SR) Tablets.jpg">  </div>
-                        <div><p>Blood-Sugar</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Sugar</p>
                         <h3>Glimepiride & Metformin Hydrochloride (SR) Tablets</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Glimepiride Tablets IP.jpg">  </div>
-                        <div><p>Blood Sugar</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Blood Sugar</p>
                         <h3>Glimepiride Tablets IP</h3>
                         </div>
                     </div>
@@ -1406,7 +1831,10 @@
                    
                     <div class="cardsMedicine">
                         <div> <img src="medicine/Glutathione for Injection.jpg">  </div>
-                        <div><p>Liver Disease</p>
+                        <div>
+                         <span><i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i>
+                                &nbsp;<i class="bi bi-star-fill"></i>&nbsp;<i class="bi bi-star-fill"></i></span>
+                            <p>Liver Disease</p>
                         <h3>Glutathione for Injection</h3>
                         </div>
                     </div>
@@ -2248,11 +2676,11 @@
                         <h3>Propranolol + Flunarizine Dihydrochloride Capsules</h3>
                         </div>
                     </div>
-                    <!-- abhi baki    -->
+                   
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Propranolol Hydrochloride Tablets IP.jpg">  </div>
+                        <div><p>Migrain-Treat</p>
+                        <h3>Propranolol Hydrochloride Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
@@ -2262,599 +2690,647 @@
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Prucalopride Tablets IP.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Prucalopride Tablets IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Pyrantel Pamoate Tablets.jpg">  </div>
+                        <div><p>Anti-Infection</p>
+                        <h3>Pyrantel Pamoate Tablets</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Pyridostigmine Tablets IP.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Pyridostigmine Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Quetiapine Tablets IP.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>Quetiapine Tablets IP</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Quinine Sulphate Tablets.jpg">  </div>
+                        <div><p>Anti-biotic</p>
+                        <h3>Quinine Sulphate Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rabeprazole Tablets IP.jpg">  </div>
+                        <div><p>Gastroenterology</p>
+                        <h3>Rabeprazole Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rabies Vaccine Human IP.jpg">  </div>
+                        <div><p>Anti-infection</p>
+                        <h3>Rabies Vaccine Human IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rabipark-DSR Capsule.jpg">  </div>
+                        <div><p>Parent-Products</p>
+                        <h3>Rabipark-DSR Capsule</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Raloxifene Hydrochloride Tablets IP.jpg">  </div>
+                        <div><p>Female-Healthcare</p>
+                        <h3>Raloxifene Hydrochloride Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Ramipril Tablets IP.jpg">  </div>
+                        <div><p>Blood Blood-Pressure</p>
+                        <h3>Ramipril Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rasburicase Injection (r-DNA origin).jpg">  </div>
+                        <div><p>Brain-Disorder</p>
+                        <h3>Rasburicase Injection (r-DNA origin)</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Razatriptan tablets ip.jpg">  </div>
+                        <div><p>Migrain-Treat</p>
+                        <h3>Razatriptan tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Regorafenib Film Coated Tablets.jpg">  </div>
+                        <div><p>Anti-Cancer</p>
+                        <h3>Regorafenib Film Coated Tablets</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Remdesivir for Injection.jpg">  </div>
+                        <div><p>Anti-biotic</p>
+                        <h3>Remdesivir for Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rifaximin Tablets IP.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Rifaximin Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rivaroxaban Tablets IP.jpg">  </div>
+                        <div><p>Pain-Killer</p>
+                        <h3>Rivaroxaban Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Roflumilast Tablets IP.jpg">  </div>
+                        <div><p>Anti-Asthametic</p>
+                        <h3>Roflumilast Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Rosuvastatin Tablets IP.jpg">  </div>
+                        <div><p>Cholesterol Lowering</p>
+                        <h3>Rosuvastatin Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/S Adenosyl L Methionine Tablets.jpg">  </div>
+                        <div><p>Anti-Anxeity</p>
+                        <h3>S Adenosyl L Methionine Tablets</h3>
                         </div>
                     </div>
+
+                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/S-Amlodipine Tablets IP.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>S-Amlodipine Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Salmeterol And Fluticasone Propionate.jpg">  </div>
+                        <div><p>Anti-Asthametic</p>
+                        <h3>Salmeterol And Fluticasone Propionate</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
+                        <div> <img src="medicine/SB-SAC.jpg">  </div>
                         <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <h3>Parent Products</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Semaglutide Tablets IP.jpg">  </div>
+                        <div><p>Anti-Diabetic</p>
+                        <h3>Semaglutide Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sertraline Hydrochloride Tablets IP.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>Sertraline Hydrochloride Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sildenafil & Dapoxetine Tablets.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Sildenafil & Dapoxetine Tablets</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sildenafil And Tadalafil Tablets.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Sildenafil And Tadalafil Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sildenafil Citrate Chewable Tablet.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Sildenafil Citrate Chewable Tablet</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sildenafil Citrate IP.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Sildenafil Citrate IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sildenafil Citrate Softgel Capsules.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Sildenafil Citrate Softgel Capsules</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sildenafil Oral Jelly.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Sildenafil Oral Jelly</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Simvastatin Tablets IP.jpg">  </div>
+                        <div><p>Cholesterol Lowering</p>
+                        <h3>Simvastatin Tablets IP</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sirolimus Tablets IP.jpg">  </div>
+                        <div><p>Kidney-Disease</p>
+                        <h3>Sirolimus Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sitagliptin Phosphate Tablets IP.jpg">  </div>
+                        <div><p>Anti-Diabetic</p>
+                        <h3>Sitagliptin Phosphate Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sodium Hyaluronate Eye Drop.jpg">  </div>
+                        <div><p>Eye Care</p>
+                        <h3>Sodium Hyaluronate Eye Drop</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sofosbuvir Tablets IP.jpg">  </div>
+                        <div><p>Hepatitis</p>
+                        <h3>Sofosbuvir Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Somatropin For Injection.jpg">  </div>
+                        <div><p>Pharmaceutical Injections</p>
+                        <h3>Somatropin For Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sorafenib Tablets IP.jpg">  </div>
+                        <div><p>Anti-Cancer</p>
+                        <h3>Sorafenib Tablets IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Spironolactone and Furosemide Tablets.jpg">  </div>
+                        <div><p>Blood-Pressure</p>
+                        <h3>Spironolactone and Furosemide Tablets</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Spironolactone Tablets IP.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Spironolactone Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sulfasalazine Delayed Release Tablets USP.jpg">  </div>
+                        <div><p>Anti-biotic</p>
+                        <h3>Sulfasalazine Delayed Release Tablets USP</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sumatriptan Tablets IP.jpg">  </div>
+                        <div><p>Migrain-Treat</p>
+                        <h3>Sumatriptan Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Sunitinib Malate Capsules.jpg">  </div>
+                        <div><p>Gastroenterology</p>
+                        <h3>Sunitinib Malate Capsules</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tacrolimus Capsules IP.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Tacrolimus Capsules IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tacrolimus Ointment IP.jpg">  </div>
+                        <div><p>Skin-Care</p>
+                        <h3>Tacrolimus Ointment IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tadalafil Oral Suspension.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Tadalafil Oral Suspension</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tadalafil Tablets IP.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Tadalafil Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tamoxifen Citrate Tablets IP.jpg">  </div>
+                        <div><p>Liver-Disease</p>
+                        <h3>Tamoxifen Citrate Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tamsulosin Hydrochloride Modified Release Tablet.jpg">  </div>
+                        <div><p>Men Healthcare</p>
+                        <h3>Tamsulosin Hydrochloride Modified Release Tablet</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tamsulosin Hydrochloride Prolonged Release Capsules.jpg">  </div>
+                        <div><p>Men Healthcare</p>
+                        <h3>Tamsulosin Hydrochloride Prolonged Release Capsules</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tazarotene Cream 0.5%.jpg">  </div>
+                        <div><p>Skin-Care</p>
+                        <h3>Tazarotene Cream 0.5%</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Teicoplanin Injection IP.jpg">  </div>
+                        <div><p>Anti-infection</p>
+                        <h3>Teicoplanin Injection IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Telmisartan & Cilnidipine Tablets.jpg">  </div>
+                        <div><p>Blood-Pressure</p>
+                        <h3>Telmisartan & Cilnidipine Tablets</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Telmisartan & Nebivolol Tablets.jpg">  </div>
+                        <div><p>Blood-Pressure</p>
+                        <h3>Telmisartan & Nebivolol Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Telmisartan And Metoprolol Succinate Tablets.jpg">  </div>
+                        <div><p>Blood-Pressure</p>
+                        <h3>Telmisartan And Metoprolol Succinate Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Temozolomide Capsules IP.jpg">  </div>
+                        <div><p>Brain-Disorder</p>
+                        <h3>Temozolomide Capsules IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Teneligliptin Tablets IP.jpg">  </div>
+                        <div><p>Anti-Diabetic</p>
+                        <h3>Teneligliptin Tablets IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tenofovir Alafenamide Tablets.jpg">  </div>
+                        <div><p>Hepatitis</p>
+                        <h3>Tenofovir Alafenamide Tablets</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
+                        <div> <img src="medicine/Tenofovir Disoproxil Fumarate Tablets IP.jpg">  </div>
                         <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <h3>Tenofovir Disoproxil Fumarate Tablets IP</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Terazosin Tablets IP.jpg">  </div>
+                        <div><p>Men-healthcare</p>
+                        <h3>Terazosin Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Terbinafine Tablets USP.jpg">  </div>
+                        <div><p>Skin-Care</p>
+                        <h3>Terbinafine Tablets USP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Testosterone Gel IP.jpg">  </div>
+                        <div><p>Men-Healthcare</p>
+                        <h3>Testosterone Gel IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Testosterone Injection IP.jpg">  </div>
+                        <div><p>Men-healthcare</p>
+                        <h3>Testosterone Injection IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Testosterone Undecanoate Soft Gelatin Capsules.jpg">  </div>
+                        <div><p>Men-Healthcare</p>
+                        <h3>Testosterone Undecanoate Soft Gelatin Capsules</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tetracycline Capsules IP.jpg">  </div>
+                        <div><p>Anti-Infection</p>
+                        <h3>Tetracycline Capsules IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Thiocolchicoside Capsules IP.jpg">  </div>
+                        <div><p>Brain-Disorder</p>
+                        <h3>Thiocolchicoside Capsules IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Thiocolchicoside, Aceclofenac Paracetamol Tablets.jpg">  </div>
+                        <div><p>Pain-Killer</p>
+                        <h3>Thiocolchicoside, Aceclofenac Paracetamol Tablets</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tianeptine Sodium Tablets.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>Tianeptine Sodium Tablets</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tiotropium Bromide Inhaler.jpg">  </div>
+                        <div><p>Anti-Asthametic</p>
+                        <h3>Tiotropium Bromide Inhaler</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tocilizumab Injection IP.jpg">  </div>
+                        <div><p>Pharmaceutical injections</p>
+                        <h3>Tocilizumab Injection IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tofacitinib Tablets IP.jpg">  </div>
+                        <div><p>Gastroenterology</p>
+                        <h3>Tofacitinib Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tofisopam Tablets IP.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>Tofisopam Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tolperisone Hydrochloride Tablets IP.jpg">  </div>
+                        <div><p>Brain-Disorder</p>
+                        <h3>Tolperisone Hydrochloride Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Topiramate Tablets IP.jpg">  </div>
+                        <div><p>Migrain-Treat</p>
+                        <h3>Topiramate Tablets IP</h3>
                         </div>
                     </div>
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Topotecan Injection IP.jpg">  </div>
+                        <div><p>Female-Healthcare</p>
+                        <h3>Topotecan Injection IP</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Torsemide & Spironolactone Tablets IP.jpg">  </div>
+                        <div><p>Blood-Pressure</p>
+                        <h3>Torsemide & Spironolactone Tablets IP</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Torsemide Injection IP.jpg">  </div>
+                        <div><p>Pharmaceuticals Injections</p>
+                        <h3>Torsemide Injection IP</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Torsemide Tablets IP.jpg">  </div>
+                        <div><p>Blood-Pressure</p>
+                        <h3>Torsemide Tablets IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tranexamic Acid Injection IP.jpg">  </div>
+                        <div><p>Pharmaceuticals Injectins</p>
+                        <h3>Tranexamic Acid Injection IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tranylcypromine Tablets IP.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>Tranylcypromine Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Travoprost Ophthalmic Solution Ip.jpg">  </div>
+                        <div><p>Eye Care</p>
+                        <h3>Travoprost Ophthalmic Solution Ip</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Trazodone Hydrochloride Tablets.jpg">  </div>
+                        <div><p>Anti-Anxiety</p>
+                        <h3>Trazodone Hydrochloride Tablets</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tretinoin Cream USP.jpg">  </div>
+                        <div><p>Skin-Care</p>
+                        <h3>Tretinoin Cream USP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abacavir Sulphate Tablets.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Tretinoin Gel Usp.jpg">  </div>
+                        <div><p>Skin Care</p>
+                        <h3>Tretinoin Gel Usp</h3>
                         </div>
                     </div>
 
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Abiraterone Acetate Tablets USP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Triamcinolone Acetonide Injection I.P.jpg">  </div>
+                        <div><p>Pharmaceuticals Injections</p>
+                        <h3>Triamcinolone Acetonide Injection I.P</h3>
                         </div>
                     </div>
 
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acarbose Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Udenafil Tablets IP.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Udenafil Tablets IP</h3>
                         </div>
                     </div>
                     
                    
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Ulinastatin Injection IP.jpg">  </div>
+                        <div><p>Pharmaceuticals Injections</p>
+                        <h3>Ulinastatin Injection IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Urofollitropin For Injection.jpg">  </div>
+                        <div><p>Female-Healthcare</p>
+                        <h3>Urofollitropin For Injection</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Ursodeoxycholic Acid Tablets IP.jpg">  </div>
+                        <div><p>Liver-Disease</p>
+                        <h3>Ursodeoxycholic Acid Tablets IP</h3>
                         </div>
                     </div>
                       
                     <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Valacyclovir Tablets Usp.jpg">  </div>
+                        <div><p>Anti-Infection</p>
+                        <h3>Valacyclovir Tablets Usp</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Valganciclovir Tablet IP.jpg">  </div>
+                        <div><p>Anti-Infection</p>
+                        <h3>Valganciclovir Tablet IP</h3>
                         </div>
                     </div>
                      <div class="cardsMedicine">
-                        <div> <img src="medicine/Acetazolamide Tablets IP.jpg">  </div>
-                        <div><p>Anti-HIV</p>
-                        <h3>Abacavir Sulphate Tablets</h3>
+                        <div> <img src="medicine/Valsartan Tablets IP.jpg">  </div>
+                        <div><p>Blood Blood-Pressure</p>
+                        <h3>Valsartan Tablets IP</h3>
+                        </div>
+                    </div>
+                      <div class="cardsMedicine">
+                        <div> <img src="medicine/Vardenafil Oral Jelly.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Vardenafil Oral Jelly</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Vardenafil Tablets IP.jpg">  </div>
+                        <div><p>Erectile Dysfunction</p>
+                        <h3>Vardenafil Tablets IP</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Venlafaxine Extended Release TabletsCapsules.jpg">  </div>
+                        <div><p>Anti-Anixiety</p>
+                        <h3>Venlafaxine Extended Release TabletsCapsules</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Vildagliptin & Metformin Hydrochloride Tablets.jpg">  </div>
+                        <div><p>Anti-Diabetic</p>
+                        <h3>Vildagliptin & Metformin Hydrochloride Tablets</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Vildagliptin Tablets IP.jpg">  </div>
+                        <div><p>Anti-Diabetic</p>
+                        <h3>Vildagliptin Tablets IP</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Vitamin C Chewable Tablet With Zinc.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Vitamin C Chewable Tablet With Zinc</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Voriconazole Tablets IP.jpg">  </div>
+                        <div><p>Anti-Infection</p>
+                        <h3>Voriconazole Tablets IP</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Zinc Sulphate Tablets.jpg">  </div>
+                        <div><p>Pharmaceuticals</p>
+                        <h3>Zinc Sulphate Tablets</h3>
+                        </div>
+                    </div>  <div class="cardsMedicine">
+                        <div> <img src="medicine/Zopiclone Tablets IP.jpg">  </div>
+                        <div><p>Anti-Anixiety</p>
+                        <h3>Zopiclone Tablets IP</h3>
                         </div>
                     </div>
                     
@@ -2867,7 +3343,16 @@
 
     <div class="pagination" id="pagination"></div>     
         
-      
+    <div class="medicineFooterBox">
+        <h2><span><i class="fas fa-heartbeat"></i> </span>&nbsp;&nbsp;Your Health Our Priority</h2>
+        <div class="medicineFooterIcon">
+        <div ><i class="fas fa-shield-alt"></i>&nbsp;&nbsp; Quality medicines</div> &nbsp;&nbsp;
+          <div>  <i class="fas fa-user-md"></i>&nbsp;&nbsp; Expert care</div> &nbsp;&nbsp;
+           <div> <i class="fas fa-sun"></i>&nbsp;&nbsp; Better Tommarow</div>
+        </div>
+    </div>
+
+
     </section>
 
 
